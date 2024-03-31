@@ -75,9 +75,9 @@ data = pd.concat([
     bigfive_model_data['gpt4'], 
     bigfive_model_data['turbo']
 ], ignore_index=True)
-data[['E', 'hue']]
+# data[['E', 'hue']]
 data['N'] = 60 - data['N']
-data[[*dimensions, 'hue']]
+# data[[*dimensions, 'hue']]
 
 
 
