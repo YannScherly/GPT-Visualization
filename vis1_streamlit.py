@@ -8,6 +8,7 @@ from collections import defaultdict
 import plotly.graph_objs as go
 import plotly.offline as pyo
 from plotly.subplots import make_subplots
+import streamlit as st
 
 
 bigfive_human_data = pd.read_csv('data/bigfive_data.csv', delimiter='\t')
@@ -184,3 +185,4 @@ for hue in hues:
     fig.add_trace(bar_trace,row=2, col=1)
 
 fig.show()
+st.plotly_chart(fig)
