@@ -1,15 +1,8 @@
 import pandas as pd
-import altair as alt
 import matplotlib.pyplot as plt
-import seaborn as sns
-import os
-import re
 import csv
 import json
-import math
 import numpy as np
-from datetime import datetime
-from collections import defaultdict, Counter
 import plotly.graph_objs as go
 import plotly.offline as pyo
 from plotly.subplots import make_subplots
