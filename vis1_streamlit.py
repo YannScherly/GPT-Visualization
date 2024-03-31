@@ -12,7 +12,7 @@ from plotly.subplots import make_subplots
 
 bigfive_human_data = pd.read_csv('data/bigfive_data.csv', delimiter='\t')
 bigfive_human_data['hue'] = 'Human'
-bigfive_human_data.head()
+# bigfive_human_data.head()
 
 ### independent 30 instances
 records_gpt4 = json.load(open('records/bigfive_gpt4_2023_06_26-01_37_11_PM.json', 'r'))
