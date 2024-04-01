@@ -94,8 +94,6 @@ hue_colors = {
 value_type = 'median'
 
 layout = go.Layout(
-    width=800,
-    height=800, 
     polar = dict(
         radialaxis = dict(
             visible = True,
@@ -109,12 +107,11 @@ layout = go.Layout(
 fig_radar = go.Figure(layout=layout)
 
 fig = make_subplots(
-    rows=2, cols=1,
-    column_widths=[1],
-    row_heights=[1, 1],
+    rows=1, cols=2,
+    column_widths=[0.5, 0.5],
+    row_heights=[1],
     specs=[
-        [{"type": "scatterpolar"}],
-        [{"type": "bar"}] 
+        [{"type": "scatterpolar"}, {"type": "bar"}] 
     ],
     figure=fig_radar
 )
@@ -182,7 +179,7 @@ for hue in hues:
     fig.add_trace(trace, row=1, col=1)
     fig.add_trace(trace_upper, row=1, col=1)
     fig.add_trace(trace_lower, row=1, col=1)
-    fig.add_trace(bar_trace,row=2, col=1)
+    fig.add_trace(bar_trace,row=1, col=2)
 
 fig.show()
 st.plotly_chart(fig)
