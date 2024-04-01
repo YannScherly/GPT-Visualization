@@ -182,4 +182,4 @@ for hue in hues:
     fig.add_trace(bar_trace,row=1, col=2)
 
 fig.show()
-st.plotly_chart(fig, use_container_width=True, height=800)
+st.plotly_chart(fig, use_container_width=True, height=500)
